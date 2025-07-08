@@ -14,7 +14,8 @@ public class Main {
             long toMultiply = c*zegob % 1234567891;
             sum+= toMultiply;
             zegob *= 31;
+            if(zegob>1234567891) zegob %= 1234567891;
         }
-        System.out.println(sum);
+        System.out.println(sum%1234567891);
     }
 }
